@@ -61,3 +61,72 @@ while (true)
         break;
     }
 }
+
+
+
+// We declare an array of type string, name it car;
+
+string[] car = { "BMW", "BENZ", "Tesla", "Hyundai"}; // declare an array named car with values.
+                                          // empty initialisation. (null or undefined)
+
+
+
+// methods in arrays.
+// get the length.
+Console.WriteLine($"Length of array car: {car.Length}");
+
+// ["BMW", "BENZ", "Tesla", "Hyundai"]
+//   0        1       2        3
+
+// to get the first element of the array.
+
+Console.WriteLine($"The first element of the array: {car[car.Length - 1]}");
+
+
+// define the values in this array we need to specify the size;
+string[] car1 = new string[3]; // declare an array with a name car1 of size 5
+Console.WriteLine("Enter car name");
+//car1[0] = Console.ReadLine();
+//car1[1] = Console.ReadLine();
+//car1[2] = Console.ReadLine();
+
+for(int i = 0; i < car1.Length; i++)
+{
+    Console.WriteLine("Enter car value");
+    car1[i] = Console.ReadLine();
+} // this is how we add values to the array.
+
+// printing an array.
+
+for(int i = 0;i < car1.Length; i++)
+{
+    Console.WriteLine($"Car: {car1[i]}"); // print all values of array.
+}
+// 1. to make an array of type int, with a size of 10 and ask the user to input the values.
+
+int[] array = new int[10];
+
+for (int i=0;i<array.Length;i++) {
+    Console.WriteLine("Enter value");
+    array[i] = int.Parse(Console.ReadLine());   
+}// get user input.
+
+// print the values of the array.
+
+for(int i = 0; i < array.Length; i++)
+{
+    Console.WriteLine($"Value of array at index {i+1} is {array[i]}");
+}
+
+
+// to create an array of size 
+int[] new_array = { 1,2,3,4,5};
+Console.WriteLine(new_array[2]);
+
+for(int i = 0; i < new_array.Length; i++)
+{
+    if (new_array[i]%2 == 0)
+    {
+        Console.WriteLine(new_array[i]);
+    }
+}
