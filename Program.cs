@@ -43,7 +43,7 @@ while (true)
         // something
         Console.WriteLine("Enter temperature in Fahrenheit:");
         double fahrenheit = double.Parse(Console.ReadLine());
-        double celsius = (double)(fahrenheit - 32) * (5 / 9);
+        double celsius = (double)(((fahrenheit - 32) *5) / 9);
         Console.WriteLine($"Temperature in Celsius: {celsius}°C"); //alt+0176
 
     }
