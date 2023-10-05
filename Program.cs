@@ -130,3 +130,56 @@ for(int i = 0; i < new_array.Length; i++)
         Console.WriteLine(new_array[i]);
     }
 }
+
+// 3. Print the sum of all elements in the array.
+int sum = 0;
+for(int i=0;i<new_array.Length; i++)
+{
+    sum = sum + new_array[i];
+}
+Console.WriteLine(sum);
+
+//4. to print the maximum element in the array.
+
+int max = -1;
+for(int i = 0; i < new_array.Length; i++)
+{
+    if (new_array[i] > max)
+    {
+        max = new_array[i];
+    }
+}
+Console.WriteLine("Max elemet in the array."+max);
+
+//5. to count all even numbers in the array.
+int evenCount = 0;
+for(int i = 0; i < new_array.Length; i++)
+{
+    if (new_array[i] % 2 == 0)
+    {
+        evenCount++;
+    }
+}
+
+Console.WriteLine("Number of even numbers present in the array is: "+ evenCount);
+
+// 6. to check to a specific value if it exists.
+Console.WriteLine("to check to a specific value if it exists.");
+int check = int.Parse(Console.ReadLine());
+int count = 0;
+for(int i=0;i<new_array.Length; i++)
+{
+    if (new_array[i] == check)
+    {
+        count++;
+    }
+}
+
+if (count > 0)
+{
+    Console.WriteLine("It exists");
+}
+else
+{
+    Console.WriteLine("Doesnt Exist");
+}
