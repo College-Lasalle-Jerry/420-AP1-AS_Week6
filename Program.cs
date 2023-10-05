@@ -183,3 +183,13 @@ else
 {
     Console.WriteLine("Doesnt Exist");
 }
+
+//7. To copy an array
+// new_array
+
+int[] copy = new int[new_array.Length];
+
+for(int i=0;i< new_array.Length; i++)
+{
+    copy[i] = new_array[i];
+}
